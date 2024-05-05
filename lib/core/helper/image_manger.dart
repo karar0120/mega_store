@@ -9,6 +9,9 @@ class ImageManger {
   static const String faceBook = '$imagePath/facebook.svg';
   static const String phone = '$imagePath/phone.svg';
   static const String user = '$imagePath/user.svg';
+  static const String sale = '$imagePath/sale.png';
+  static const String slider = '$imagePath/slider.png';
+  static const String bag = '$imagePath/bag.png';
 }
 
 class JsonAssets {

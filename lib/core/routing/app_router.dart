@@ -9,6 +9,8 @@ import 'package:mega_store/feature/auth/login/ui/widget/forget_password_widget/r
 import 'package:mega_store/feature/auth/login/ui/widget/forget_password_widget/verify_your_account.dart';
 import 'package:mega_store/feature/auth/register/logic/cubit/register_cubit.dart';
 import 'package:mega_store/feature/auth/register/ui/register_screen.dart';
+import 'package:mega_store/feature/home/controller/nav_cubit.dart';
+import 'package:mega_store/feature/home/ui/navigations.dart';
 
 class AppRoute {
   static Route<dynamic> generateRoute(RouteSettings settings) {
@@ -35,6 +37,12 @@ class AppRoute {
       case Routes.resetPasswordScreen:
         return MaterialPageRoute(
             builder: (context) => const RestPasswordScreen());
+      case Routes.homeScreens:
+        return MaterialPageRoute(
+            builder: (context) => BlocProvider(
+                  create: (context) => NavCubit(),
+                  child: const NavigationsScreen(),
+                ));
 
       default:
         return unDefinedRoute();

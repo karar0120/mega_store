@@ -5,4 +5,10 @@ part 'nav_state.dart';
 
 class NavCubit extends Cubit<NavState> {
   NavCubit() : super(NavInitial());
+  int index = 0;
+
+  void changeIndex(int index) {
+    this.index = index;
+    emit(ChangeIndex());
+  }
 }
