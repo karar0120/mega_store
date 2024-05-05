@@ -1,4 +1,4 @@
-# mega_store_task
+# mega store task
 
 The Mega E-Commerce App is a comprehensive Flutter application designed to provide users with a seamless shopping experience. The app includes various features such as authentication, product browsing, favorites management, product details, product reviews, search functionality, cart management, profile management, and order tracking.
 
